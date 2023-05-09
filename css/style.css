@@ -1,0 +1,62 @@
+@import url("/sass/fonts.scss");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #FDFBF7;
+  padding: 15px 200px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+.header__menu li {
+  margin-right: 40px;
+  font-size: 18px;
+}
+.header__menu li:last-child {
+  margin-right: 0px;
+}
+
+.first-section {
+  height: 800px;
+  position: relative;
+}
+.first-section__header {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 72px;
+  margin-bottom: 80px;
+}
+.first-section__order-button {
+  display: flex;
+}
+.first-section__order {
+  position: absolute;
+  top: 270px;
+}
+
+.big-button {
+  width: 308px;
+  height: 70px;
+  background: #CD4D8A;
+  border-radius: 80px;
+  border: 0;
+}/*# sourceMappingURL=style.css.map */
