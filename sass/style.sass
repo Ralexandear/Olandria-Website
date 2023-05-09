@@ -1,15 +1,8 @@
 @import url("/sass/fonts.scss")
     
 $olvishi-red: #CD4D8A
-
-
-
-// @font-face 
-//     font-family:
-//     src: url()
-
-
-    
+$primary-bg: #FDFBF7
+$secondary-bg: #EFF0EB
 
 
 * 
@@ -17,19 +10,36 @@ $olvishi-red: #CD4D8A
 
 
 body
-    background: #FDFBF7
-    padding: 15px 200px
-
+    background: $primary-bg
+    color: #232323
+    font-family: "Montserrat"
+    
 a
     text-decoration: none
-    color: black
+    color: #232323
+
+
+
+h2
+    font-size: 64px
+    font-weight: 400
+
+p
+    font-size: 24px
+
+
+
+.box
+    padding-left: 200px
+    max-width: 80%
 
 .header
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    align-items: center
-    
+    &__container
+        padding-top: 15px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
     &__menu
         ul 
             display: flex
@@ -37,7 +47,6 @@ a
             list-style-type: none
             margin: 0
             padding: 0
-            text-align: right
         li
             margin-right: 40px
             font-size: 18px
@@ -47,26 +56,38 @@ a
 
 .first-section
     height: 800px
-    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+
     &__header
-        font-family: "Montserrat"
         font-weight: 400
         font-size: 72px
-        margin-bottom: 80px
+        margin-bottom: 30px
     &__order-button
         display: flex
-    &__order
-        position: absolute
-        top: 270px
+    &__text
+        margin-bottom: 60px
         
-     
-
+        
 .big-button
     width: 308px
     height: 70px
     background: $olvishi-red
     border-radius: 80px
     border: 0
+    font-size: 18px
+    color: $primary-bg
+
+.second-section
+    height: 600px
+    background: $secondary-bg
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    &__header
+        margin-bottom: 30px
 
 
         
