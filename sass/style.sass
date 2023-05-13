@@ -71,14 +71,6 @@ p
         font-size: 18px
         
         
-.big-button
-    width: 308px
-    height: 70px
-    background: $olvishi-red
-    border-radius: 80px
-    border: 0
-    font-size: 18px
-    color: $primary-bg
 
 .second-section
     height: 600px
@@ -93,38 +85,61 @@ p
 
 // .card
 
-
-.third-section
-    &__header
-        margin-bottom: 80px
-    &__first-card
-        width: 400px
-        height: 423px
-        background: $secondary-bg
-        border-color: $olvishi-red 
-    &__second-card
-        width: 400px
-        height: 317px
-        background: $olvishi-red
-        margin-top: 50px
-    &__third-card
-        background: $secondary-bg
-        border-color: $third-bg
-        margin-bottom: 50px
-    &__fourth-card
-        background: $third-bg
-        margin-bottom: 50px
-    &__fifth-card
-        background: $secondary-bg
-        border-color: $olvishi-red
-    
-.gen-cards
+.card //общий класс для всех карточек
     display: flex
     flex-direction: column
     justify-content: center
     text-align: center
     border-radius: 20px
-    border-size: 1px
+    border: 1px
+
+.third-section
+    &__header
+        margin-bottom: 80px
+    
+    &__cards-container
+        height: 790px
+        width: 1160px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+    &__wrapper
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+    //left-wrapper cards
+
+    &__left-top-card
+        width: 400px
+        height: 423px
+        background: $secondary-bg
+        border-color: $olvishi-red
+ 
+    &__left-bottom-card
+        width: 400px
+        height: 317px
+        background: $olvishi-red
+    
+    //center-wrapper cards
+   
+    &__center-top-card
+        background: $secondary-bg
+        border-color: $third-bg
+    &__center-middle-card
+        background: $third-bg
+    &__center-bottom-card
+        background: $secondary-bg
+        border-color: $olvishi-red
+    
+    //right wrapper
+    
+    &__big-card
+        height: 100%
+        width: 341px
+        background: $third-bg
+        
 .s-card
     width: 348px
     height: 233px
@@ -134,6 +149,16 @@ p
 .white-text
     color: $primary-bg  
 
+
+.big-button
+    width: 308px
+    height: 70px
+    background: $olvishi-red
+    border-radius: 80px
+    border: 0
+    font-size: 18px
+    color: $primary-bg
+    
 .small-button
     width: 185px
     height: 46px
