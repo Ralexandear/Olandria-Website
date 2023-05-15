@@ -1,4 +1,21 @@
-@import url("/sass/fonts.scss");
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
 * {
   box-sizing: border-box;
 }
@@ -15,7 +32,12 @@ a {
 }
 
 h2 {
-  font-size: 64px;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 24px;
   font-weight: 400;
 }
 
@@ -24,7 +46,7 @@ p {
 }
 
 .box {
-  padding-left: 200px;
+  padding-left: 130px;
   max-width: 80%;
 }
 
@@ -71,7 +93,7 @@ p {
 
 .second-section {
   height: 600px;
-  background: #EFF0EB;
+  background: #F2F3ED;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,7 +130,7 @@ p {
 .third-section__left-top-card {
   width: 400px;
   height: 423px;
-  background: #EFF0EB;
+  background: #F2F3ED;
   border-color: #CD4D8A;
 }
 .third-section__left-bottom-card {
@@ -117,20 +139,21 @@ p {
   background: #CD4D8A;
 }
 .third-section__center-top-card {
-  background: #EFF0EB;
+  background: #F2F3ED;
   border-color: #4BA46E;
 }
 .third-section__center-middle-card {
   background: #4BA46E;
 }
 .third-section__center-bottom-card {
-  background: #EFF0EB;
+  background: #F2F3ED;
   border-color: #CD4D8A;
 }
 .third-section__big-card {
   height: 100%;
   width: 341px;
-  background: #4BA46E;
+  background: #F2F3ED;
+  border-color: #CD4D8A;
 }
 
 .s-card {
@@ -166,7 +189,7 @@ p {
 }
 
 .pink-button {
-  background: #EFF0EB;
+  background: #F2F3ED;
   border-color: #CD4D8A;
 }
 

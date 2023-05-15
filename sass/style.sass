@@ -1,8 +1,24 @@
-@import url("/sass/fonts.scss")
+@font-face
+    font-family: "Montserrat"
+    src: url("../fonts/Montserrat-Regular.ttf")
+    font-weight: 400
+    font-style: normal
+
+@font-face
+    font-family: "Montserrat"
+    src: url("../fonts/Montserrat-Medium.ttf")
+    font-weight: 500
+    font-style: normal
+
+@font-face
+    font-family: "Montserrat"
+    src: url("../fonts/Montserrat-Italic.ttf")
+    font-weight: 400
+    font-style: italic
     
 $olvishi-red: #CD4D8A
 $primary-bg: #FDFBF7
-$secondary-bg: #EFF0EB
+$secondary-bg: #F2F3ED
 $third-bg: #4BA46E
 
 
@@ -22,7 +38,11 @@ a
 
 
 h2
-    font-size: 64px
+    font-size: 60px
+    font-weight: 400
+
+h3
+    font-size: 24px
     font-weight: 400
 
 p
@@ -30,7 +50,7 @@ p
 
 
 .box
-    padding-left: 200px
+    padding-left: 130px
     max-width: 80%
 
 .header
@@ -138,7 +158,8 @@ p
     &__big-card
         height: 100%
         width: 341px
-        background: $third-bg
+        background: $secondary-bg
+        border-color: $olvishi-red
         
 .s-card
     width: 348px
