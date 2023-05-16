@@ -16,8 +16,8 @@
   font-weight: 400;
   font-style: italic;
 }
-* {
-  box-sizing: border-box;
+.container {
+  position: relative;
 }
 
 body, h1, h2, h3, p {
@@ -47,227 +47,18 @@ p, h3 {
   font-size: 24px;
 }
 
-.box {
-  padding-left: 130px;
-  max-width: 80%;
+.bg-body-tertiary {
+  background-color: transparent !important;
 }
 
-.header__container {
-  padding-top: 20px;
+.container-fluid {
+  margin: 0;
+}
+
+.main-section__nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-.header__menu ul {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
   padding: 0;
-}
-.header__menu li {
-  margin-right: 40px;
-  font-size: 18px;
-}
-.header__menu li:last-child {
-  margin-right: 0px;
-}
-
-.quiz {
-  font-size: 24px;
-  background: #FDFBF7;
-}
-
-.first-section {
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.first-section__header {
-  font-weight: 400;
-  font-size: 72px;
-  margin-bottom: 30px;
-}
-.first-section__order-button {
-  display: flex;
-}
-.first-section__text {
-  margin-bottom: 60px;
-  font-size: 18px;
-}
-
-.second-section {
-  height: 600px;
-  background: #F2F3ED;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 140px;
-}
-.second-section__header {
-  margin-bottom: 40px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  border-radius: 20px;
-  border: 1px;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.third-section__header {
-  margin-bottom: 80px;
-}
-.third-section__cards-container {
-  margin-bottom: 140px;
-  height: 790px;
-  width: 1160px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.third-section__center-wrapper .card {
-  border-color: #4BA46E;
-  background: #F2F3ED;
-}
-.third-section__center-wrapper button {
-  border-color: #4BA46E;
-}
-.third-section__center-wrapper .middle-card {
-  background: #4BA46E;
-}
-.third-section__center-wrapper .middle-card button {
-  border-color: #FDFBF7;
-}
-.third-section__center-wrapper .btn-outline-secondary {
-  --bs-btn-hover-bg: #4BA46E;
-}
-.third-section__left-top-card {
-  width: 400px;
-  height: 423px;
-  background: #F2F3ED;
-  border-color: #CD4D8A;
-}
-.third-section__left-bottom-card {
-  width: 400px;
-  height: 317px;
-  background: #CD4D8A;
-  color: #FDFBF7;
-}
-.third-section__left-bottom-card div button:hover {
-  background-color: #FDFBF7;
-}
-.third-section__big-card {
-  height: 100%;
-  width: 341px;
-  background: #F2F3ED;
-  border-color: #CD4D8A;
-}
-
-.s-card {
-  width: 348px;
-  height: 233px;
-}
-
-.dash {
-  border-style: dashed;
-}
-
-.white-text {
-  color: #FDFBF7;
-}
-
-.big-button {
-  width: 308px;
-  height: 70px;
-  background: #CD4D8A;
-  border-radius: 80px;
-  border: 0;
-  font-size: 18px;
-  color: #FDFBF7;
-}
-
-.small-button {
-  background: transparent;
-  width: 185px;
-  height: 46px;
-  border-radius: 80px;
-  font-size: 18px;
-  margin-top: 30px;
-}
-
-.pink-button {
-  border-color: #CD4D8A;
-  color: #CD4D8A;
-}
-.pink-button:hover {
-  background-color: #CD4D8A;
-}
-
-.white-button {
-  border-color: #FDFBF7;
-  color: #FDFBF7;
-}
-.white-button:hover {
-  background-color: #F2F3ED;
-  color: #232323;
-  border-color: #F2F3ED;
-}
-
-.green-button {
-  background: #4BA46E;
-  border-color: #FDFBF7;
-  color: #FDFBF7;
-}
-
-.fifth-section__header {
-  margin-bottom: 74px;
-}
-
-.social-icons {
-  display: flex;
-  list-style-type: none;
-  flex-direction: row;
-  padding: 0;
-}
-.social-icons li {
-  margin-right: 30px;
-}
-.social-icons li:last-child {
-  margin: 0;
-}
-
-.accordion-item {
-  background: #FDFBF7;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: 1px solid #232323;
-  text-align: left;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.accordion-button {
-  height: 100px;
-}
-.accordion-button:focus {
-  box-shadow: none;
-}
-.accordion-button:not(.collapsed) {
-  background-color: #FDFBF7;
-}
-
-.accordionText {
-  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */

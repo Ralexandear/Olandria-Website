@@ -25,12 +25,8 @@ $natural-black: #232323
 
 
 
-    
-
-
-
-* 
-    box-sizing: border-box
+.container
+    position: relative
 
 
 body, h1,h2,h3,p
@@ -54,226 +50,236 @@ h3
 p, h3
     font-size: 24px
 
-
-.box
-    padding-left: 130px
-    max-width: 80%
-
-.header
-    &__container
-        padding-top: 20px
+.bg-body-tertiary
+    background-color: transparent!important
+.container-fluid
+    margin: 0
+.main-section
+    &__nav-container
         display: flex
-        flex-direction: row
+        flex-direction: row    
         justify-content: space-between
         align-items: center
-    &__menu
-        ul 
-            display: flex
-            flex-direction: row 
-            list-style-type: none
-            margin: 0
-            padding: 0
-        li
-            margin-right: 40px
-            font-size: 18px
+        padding: 0
+        
+// .box
+//     padding-left: 130px
 
-            &:last-child
-                margin-right: 0px
+// .header
+//     &__container
+//         padding-top: 20px
+//         display: flex
+//         flex-direction: row
+//         justify-content: space-between
+//         align-items: center
+//     &__menu
+//         ul 
+//             display: flex
+//             flex-direction: row 
+//             list-style-type: none
+//             margin: 0
+//             padding: 0
+//         li
+//             margin-right: 40px
+//             font-size: 18px
 
-.quiz
-    font-size: 24px
-    background: $primary-bg
+//             &:last-child
+//                 margin-right: 0px
 
-.first-section
-    height: 800px
-    display: flex
-    flex-direction: column
-    justify-content: center
+// .quiz
+//     font-size: 24px
+//     background: $primary-bg
 
-    &__header
-        font-weight: 400
-        font-size: 72px
-        margin-bottom: 30px
-    &__order-button
-        display: flex
-    &__text
-        margin-bottom: 60px
-        font-size: 18px
+// .first-section
+//     height: 800px
+//     display: flex
+//     flex-direction: column
+//     justify-content: center
+
+//     &__header
+//         font-weight: 400
+//         font-size: 72px
+//         margin-bottom: 30px
+//     &__order-button
+//         display: flex
+//     &__text
+//         margin-bottom: 60px
+//         font-size: 18px
         
 
-.second-section
-    height: 600px
-    background: $secondary-bg
-    display: flex
-    flex-direction: column
-    justify-content: center
-    margin-bottom: 140px
+// .second-section
+//     height: 600px
+//     background: $secondary-bg
+//     display: flex
+//     flex-direction: column
+//     justify-content: center
+//     margin-bottom: 140px
 
-    &__header
-        margin-bottom: 40px
+//     &__header
+//         margin-bottom: 40px
 
-// .card
+// // .card
 
-.card //общий класс для всех карточек
-    display: flex
-    flex-direction: column
-    justify-content: center
-    text-align: center
-    border-radius: 20px
-    border: 1px
-.wrapper
-    display: flex
-    flex-direction: column
-    justify-content: space-between
+// .card //общий класс для всех карточек
+//     display: flex
+//     flex-direction: column
+//     justify-content: center
+//     text-align: center
+//     border-radius: 20px
+//     border: 1px
+// .wrapper
+//     display: flex
+//     flex-direction: column
+//     justify-content: space-between
 
-.third-section
-    &__header
-        margin-bottom: 80px
+// .third-section
+//     &__header
+//         margin-bottom: 80px
     
-    &__cards-container
-        margin-bottom: 140px
-        height: 790px
-        width: 1160px
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-    &__center-wrapper
-        & .card
-            border-color: $third-bg
-            background: $secondary-bg
-        button
-            border-color: $third-bg
-        & .middle-card
-            background: $third-bg
-            button
-                border-color:$primary-bg
-        & .btn-outline-secondary
-            --bs-btn-hover-bg: #4BA46E
+//     &__cards-container
+//         margin-bottom: 140px
+//         height: 790px
+//         // width: 1160px
+//         display: flex
+//         flex-direction: row
+//         justify-content: space-between
+//     &__center-wrapper
+//         & .card
+//             border-color: $third-bg
+//             background: $secondary-bg
+//         button
+//             border-color: $third-bg
+//         & .middle-card
+//             background: $third-bg
+//             button
+//                 border-color:$primary-bg
+//         & .btn-outline-secondary
+//             --bs-btn-hover-bg: #4BA46E
         
         
 
 
     
 
-    //left-wrapper cards
+//     //left-wrapper cards
 
-    &__left-top-card
-        width: 400px
-        height: 423px
-        background: $secondary-bg
-        border-color: $olvishi-red
+//     &__left-top-card
+//         width: 400px
+//         height: 423px
+//         background: $secondary-bg
+//         border-color: $olvishi-red
  
-    &__left-bottom-card
-        width: 400px
-        height: 317px
-        background: $olvishi-red
-        color: $primary-bg
-        div
-            button:hover
-                background-color: $primary-bg
+//     &__left-bottom-card
+//         width: 400px
+//         height: 317px
+//         background: $olvishi-red
+//         color: $primary-bg
+//         div
+//             button:hover
+//                 background-color: $primary-bg
         
 
     
-    //center-wrapper cards
+//     //center-wrapper cards
 
         
 
 
     
-    //right wrapper
+//     //right wrapper
     
-    &__big-card
-        height: 100%
-        width: 341px
-        background: $secondary-bg
-        border-color: $olvishi-red
+//     &__big-card
+//         height: 100%
+//         width: 341px
+//         background: $secondary-bg
+//         border-color: $olvishi-red
         
-.s-card
-    width: 348px
-    height: 233px
-.dash
-    border-style: dashed
+// .s-card
+//     width: 348px
+//     height: 233px
+// .dash
+//     border-style: dashed
 
-.white-text
-    color: $primary-bg  
+// .white-text
+//     color: $primary-bg  
 
 
-.big-button
-    width: 308px
-    height: 70px
-    background: $olvishi-red
-    border-radius: 80px
-    border: 0
-    font-size: 18px
-    color: $primary-bg
+// .big-button
+//     width: 308px
+//     height: 70px
+//     background: $olvishi-red
+//     border-radius: 80px
+//     border: 0
+//     font-size: 18px
+//     color: $primary-bg
     
-.small-button
-    background: transparent
-    width: 185px
-    height: 46px
-    border-radius: 80px
-    font-size: 18px
-    margin-top: 30px
+// .small-button
+//     background: transparent
+//     width: 185px
+//     height: 46px
+//     border-radius: 80px
+//     font-size: 18px
+//     margin-top: 30px
 
 
 
-.pink-button
-    // background: $secondary-bg
-    border-color: $olvishi-red
-    color: $olvishi-red
-    &:hover
-        background-color: $olvishi-red
-.white-button
-    border-color: $primary-bg
-    color: $primary-bg
+// .pink-button
+//     // background: $secondary-bg
+//     border-color: $olvishi-red
+//     color: $olvishi-red
+//     &:hover
+//         background-color: $olvishi-red
+// .white-button
+//     border-color: $primary-bg
+//     color: $primary-bg
     
-    &:hover
-        background-color: $secondary-bg
-        color: $natural-black
-        border-color: $secondary-bg
+//     &:hover
+//         background-color: $secondary-bg
+//         color: $natural-black
+//         border-color: $secondary-bg
     
 
-.green-button
-    background: $third-bg
-    border-color: $primary-bg
-    color: $primary-bg
+// .green-button
+//     background: $third-bg
+//     border-color: $primary-bg
+//     color: $primary-bg
     
-.fifth-section
-    &__header
-        margin-bottom: 74px
+// .fifth-section
+//     &__header
+//         margin-bottom: 74px
 
 
-.social-icons 
-    display: flex
-    list-style-type: none
-    flex-direction: row
-    padding: 0
+// .social-icons 
+//     display: flex
+//     list-style-type: none
+//     flex-direction: row
+//     padding: 0
     
-    li
-        margin-right: 30px
-        &:last-child
-            margin: 0
+//     li
+//         margin-right: 30px
+//         &:last-child
+//             margin: 0
 
-.accordion-item
-    background: $primary-bg
-    border-top: none
-    border-right: none
-    border-left: none
-    border-bottom: 1px solid $natural-black
-    text-align: left 
-    font-size: 18px
-    font-weight: 400
+// .accordion-item
+//     background: $primary-bg
+//     border-top: none
+//     border-right: none
+//     border-left: none
+//     border-bottom: 1px solid $natural-black
+//     text-align: left 
+//     font-size: 18px
+//     font-weight: 400
 
 
 
-.accordion-button
-    height: 100px
+// .accordion-button
+//     height: 100px
     
-    &:focus
-        box-shadow: none
+//     &:focus
+//         box-shadow: none
 
-    &:not(.collapsed)
-        background-color: $primary-bg
+//     &:not(.collapsed)
+//         background-color: $primary-bg
 
-.accordionText
-    font-size: 18px
+// .accordionText
+//     font-size: 18px
