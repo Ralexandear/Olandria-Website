@@ -20,15 +20,18 @@
   box-sizing: border-box;
 }
 
+body, h1, h2, h3, p {
+  color: #232323;
+  margin: 0;
+}
+
 body {
   background: #FDFBF7;
-  color: #232323;
   font-family: "Montserrat";
 }
 
 a {
   text-decoration: none;
-  color: #232323;
 }
 
 h2 {
@@ -116,6 +119,12 @@ p, h3 {
   border: 1px;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .third-section__header {
   margin-bottom: 80px;
 }
@@ -127,10 +136,21 @@ p, h3 {
   flex-direction: row;
   justify-content: space-between;
 }
-.third-section__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.third-section__center-wrapper .card {
+  border-color: #4BA46E;
+  background: #F2F3ED;
+}
+.third-section__center-wrapper button {
+  border-color: #4BA46E;
+}
+.third-section__center-wrapper .middle-card {
+  background: #4BA46E;
+}
+.third-section__center-wrapper .middle-card button {
+  border-color: #FDFBF7;
+}
+.third-section__center-wrapper .btn-outline-secondary {
+  --bs-btn-hover-bg: #4BA46E;
 }
 .third-section__left-top-card {
   width: 400px;
@@ -142,17 +162,10 @@ p, h3 {
   width: 400px;
   height: 317px;
   background: #CD4D8A;
+  color: #FDFBF7;
 }
-.third-section__center-top-card {
-  background: #F2F3ED;
-  border-color: #4BA46E;
-}
-.third-section__center-middle-card {
-  background: #4BA46E;
-}
-.third-section__center-bottom-card {
-  background: #F2F3ED;
-  border-color: #CD4D8A;
+.third-section__left-bottom-card div button:hover {
+  background-color: #FDFBF7;
 }
 .third-section__big-card {
   height: 100%;
@@ -185,23 +198,30 @@ p, h3 {
 }
 
 .small-button {
+  background: transparent;
   width: 185px;
   height: 46px;
   border-radius: 80px;
-  border: 1px;
   font-size: 18px;
   margin-top: 30px;
 }
 
 .pink-button {
-  background: #F2F3ED;
   border-color: #CD4D8A;
+  color: #CD4D8A;
+}
+.pink-button:hover {
+  background-color: #CD4D8A;
 }
 
 .white-button {
-  background: #CD4D8A;
   border-color: #FDFBF7;
   color: #FDFBF7;
+}
+.white-button:hover {
+  background-color: #F2F3ED;
+  color: #232323;
+  border-color: #F2F3ED;
 }
 
 .green-button {
