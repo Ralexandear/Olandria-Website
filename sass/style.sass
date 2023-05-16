@@ -15,27 +15,34 @@
     src: url("../fonts/Montserrat-Italic.ttf")
     font-weight: 400
     font-style: italic
-    
+
 $olvishi-red: #CD4D8A
 $primary-bg: #FDFBF7
 $secondary-bg: #F2F3ED
 $third-bg: #4BA46E
+$natural-black: #232323
+
+
+
+
+    
+
 
 
 * 
     box-sizing: border-box
 
 
+body, h1,h2,h3,p
+    color: $natural-black
+    margin: 0
+
 body
-    background: $primary-bg
-    color: #232323
+    background: $primary-bg  
     font-family: "Montserrat"
     
 a
     text-decoration: none
-    color: #232323
-
-
 
 h2
     font-size: 60px
@@ -114,6 +121,10 @@ p, h3
     text-align: center
     border-radius: 20px
     border: 1px
+.wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 
 .third-section
     &__header
@@ -126,11 +137,23 @@ p, h3
         display: flex
         flex-direction: row
         justify-content: space-between
+    &__center-wrapper
+        & .card
+            border-color: $third-bg
+            background: $secondary-bg
+        button
+            border-color: $third-bg
+        & .middle-card
+            background: $third-bg
+            button
+                border-color:$primary-bg
+        & .btn-outline-secondary
+            --bs-btn-hover-bg: #4BA46E
+        
+        
 
-    &__wrapper
-        display: flex
-        flex-direction: column
-        justify-content: space-between
+
+    
 
     //left-wrapper cards
 
@@ -144,17 +167,18 @@ p, h3
         width: 400px
         height: 317px
         background: $olvishi-red
+        color: $primary-bg
+        div
+            button:hover
+                background-color: $primary-bg
+        
+
     
     //center-wrapper cards
-   
-    &__center-top-card
-        background: $secondary-bg
-        border-color: $third-bg
-    &__center-middle-card
-        background: $third-bg
-    &__center-bottom-card
-        background: $secondary-bg
-        border-color: $olvishi-red
+
+        
+
+
     
     //right wrapper
     
@@ -184,20 +208,31 @@ p, h3
     color: $primary-bg
     
 .small-button
+    background: transparent
     width: 185px
     height: 46px
     border-radius: 80px
-    border: 1px
     font-size: 18px
     margin-top: 30px
 
+
+
 .pink-button
-    background: $secondary-bg
+    // background: $secondary-bg
     border-color: $olvishi-red
+    color: $olvishi-red
+    &:hover
+        background-color: $olvishi-red
 .white-button
-    background: $olvishi-red
     border-color: $primary-bg
     color: $primary-bg
+    
+    &:hover
+        background-color: $secondary-bg
+        color: $natural-black
+        border-color: $secondary-bg
+    
+
 .green-button
     background: $third-bg
     border-color: $primary-bg
@@ -224,7 +259,7 @@ p, h3
     border-top: none
     border-right: none
     border-left: none
-    border-bottom: 1px solid #232323
+    border-bottom: 1px solid $natural-black
     text-align: left 
     font-size: 18px
     font-weight: 400
