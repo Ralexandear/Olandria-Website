@@ -39,12 +39,16 @@ h2 {
   font-weight: 400;
 }
 
-h3 {
+h3, h4 {
   font-weight: 400;
 }
 
 p, h3 {
   font-size: 24px;
+}
+
+h4 {
+  font-size: 48px;
 }
 
 .bg-body-tertiary {
@@ -130,31 +134,31 @@ p, h3 {
   justify-content: space-between;
 }
 .third-section__center-wrapper .card {
-  border-color: #4BA46E;
+  border-color: #8799AA;
   background: #F2F3ED;
 }
 .third-section__center-wrapper button {
-  border-color: #4BA46E;
+  border-color: #8799AA;
 }
 .third-section__center-wrapper .middle-card {
-  background: #4BA46E;
+  background: #8799AA;
 }
 .third-section__center-wrapper .middle-card button {
   border-color: #FDFBF7;
 }
 .third-section__center-wrapper .btn-outline-secondary {
-  --bs-btn-hover-bg: #4BA46E;
+  --bs-btn-hover-bg: #8799AA;
 }
 .third-section__left-top-card {
   width: 400px;
   height: 423px;
   background: #F2F3ED;
-  border-color: #CD4D8A;
+  border-color: #8FA196;
 }
 .third-section__left-bottom-card {
   width: 400px;
   height: 317px;
-  background: #CD4D8A;
+  background: #8FA196;
   color: #FDFBF7;
 }
 .third-section__left-bottom-card div button:hover {
@@ -164,7 +168,7 @@ p, h3 {
   height: 100%;
   width: 341px;
   background: #F2F3ED;
-  border-color: #CD4D8A;
+  border-color: #8FA196;
 }
 
 .s-card {
@@ -173,7 +177,7 @@ p, h3 {
 }
 
 .dash {
-  border-style: dashed;
+  border-style: solid;
 }
 
 .white-text {
@@ -183,7 +187,7 @@ p, h3 {
 .big-button {
   width: 308px;
   height: 70px;
-  background: #CD4D8A;
+  background: #8FA196;
   border-radius: 80px;
   border: 0;
   font-size: 18px;
@@ -200,11 +204,11 @@ p, h3 {
 }
 
 .pink-button {
-  border-color: #CD4D8A;
-  color: #CD4D8A;
+  border-color: #8FA196;
+  color: #8FA196;
 }
 .pink-button:hover {
-  background-color: #CD4D8A;
+  background-color: #8FA196;
 }
 
 .white-button {
@@ -218,7 +222,7 @@ p, h3 {
 }
 
 .green-button {
-  background: #4BA46E;
+  background: #8799AA;
   border-color: #FDFBF7;
   color: #FDFBF7;
 }
