@@ -46,9 +46,9 @@
         </div>
         <div class="main-section__block container">
             <h1>Olandria Apps</h1>
-            <p class="first-section__text">создаём решения для Вашего бизнеса - от карточки товара да сайта, от чат-бота до CRM-системы</p>
-            <div class="first-section__order-button">
-                <button class="btn btn-primary">Заказать проект</button>
+            <p class="main-section__text">создаём решения для Вашего бизнеса - от карточки товара да сайта, от чат-бота до CRM-системы</p>
+            <div class="main-section__order-button">
+                <button class="btn btn-outline-dark order-button">Заказать проект</button>
             </div>
         </div>        
     </section>
@@ -71,41 +71,61 @@
                     <div class="third-section__left-top-card card dash">
                         <p>Cайты под ключ</p>
                         <div class="third-section__order-button">
-                            <button type="button" class="btn btn-outline-danger small-button pink-button">Подробнее</button>
+                            <button type="button" class="btn btn-outline-bright small-button pink-button" data-bs-toggle="modal" data-bs-target="#description-layout">Подробнее</button>
                         </div>
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="description-layout" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="description-layout__label" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h1 class="modal-title" id="description-layout__label">Что входит в разработку сайта под ключ?</h1>
+                                  ...
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                  <button type="button" class="btn btn-primary">Понял</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                          
+ 
                     </div>
                     <div class="third-section__left-bottom-card card">
                         <p class="white-text">Телеграм-боты</p>
                         <div class="third-section__order-button">
-                            <button type="button"  class="btn btn-outline-secondary small-button white-button">Подробнее</button>
+                            <button type="button"  class="btn btn-outline-dark small-button white-button">Подробнее</button>
                         </div>
                     </div>
                 </div>
                 <div class="third-section__center-wrapper wrapper">
-                    <div class="card s-card dash">
-                        <p>CRM-системы</p>
+                    <div class="card s-card third-section__middle-top-card">
+                        <p class="white-text">CRM-системы</p>
                         <div class="third-section__order-button">
-                            <button type="button" class="btn btn-outline-secondary small-button ">Подробнее</button>
+                            <button type="button" class="btn btn-outline-dark small-button ">Подробнее</button>
                         </div>
                     </div>
-                    <div class="middle-card card s-card">
-                        <p class="white-text">Инфографика</p>
+                    <div class="card s-card">
+                        <p>Инфографика</p>
                         <div class="third-section__order-button">
-                            <button type="button" class="btn btn-outline-secondary small-button white-button">Подробнее</button>
+                            <button type="button" class="btn btn-outline-bright small-button white-button">Подробнее</button>
                         </div>
                     </div>
-                    <div class="card s-card dash">
+                    <div class="card s-card">
                         <p>Вёрстка макетов</p>
                         <div class="third-section__order-button">
-                            <button type="button" class="btn btn-outline-secondary small-button">Подробнее</button>
+                            <button type="button" class="btn btn-outline-bright small-button">Подробнее</button>
                         </div>
                     </div>
                 </div>
                 <div class="third-section__wrapper wrapper">
-                    <div class="third-section__big-card card dash">
+                    <div class="third-section__big-card card">
                         <p>CRM-системы</p>
                         <div class="third-section__order-button">
-                            <button type="button" class="btn btn-outline-danger small-button pink-button">Подробнее</button>
+                            <button type="button" class="btn btn-outline-bright small-button pink-button">Подробнее</button>
                         </div>
                     </div>
                 </div>
@@ -113,7 +133,7 @@
         </div>
     </section>
     <section class="fifth-section">
-        <div class = "fifth-section__fifth container">
+        <div class = "fifth-section__container container">
             <h2 class="fifth-section__header">FAQ</h2>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
@@ -181,9 +201,9 @@
               </div>
         </div>
     </section>
-    <section class="second-section"> <!-- вот тут непонятно с секонд секшн -->
-        <div class = "sixth-section__sixth container">
-            <h4 class="sixth-section__header">Давайте вместе творить<br>и создавать уникальные продукты для Вашего бизнеса!</h4>
+    <section class="contact-us"> <!-- вот тут непонятно с секонд секшн -->
+        <div class = "contact-us__container container">
+            <h4 class="contact-us__header">Давайте вместе творить<br>и создавать уникальные продукты для Вашего бизнеса!</h4>
             <p>Свяжитесь с нами любым удобным для Вас способом:</p>
             <ul class="social-icons">
                 <li><a href="https://www.linkedin.com/company/olandria-apps/"><img src="/icon/linkedin.svg" /></a></li>
@@ -191,6 +211,24 @@
                 <li><a href="#"><img src="/icon/whatsapp.svg" /></a></li>
                 <li><a href="OlandriaApps@gmail.com"><img src="/icon/mail.svg" /></a></li>
             </ul>
+        </div>
+    </section>
+    <section class = "footer" id ="footer">
+        <div class="footer__container container">
+            <div class="footer__license">
+                <h6>Olandria Apps</h6>
+                <p>© 2023 Все права защищены.  Olandria Apps.</p>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="footer__contacts">
+                <h3>Мы в социальных сетях:</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.linkedin.com/company/olandria-apps/"><img src="/icon/linkedin.svg" /></a></li>
+                    <li><a href="#"><img src="/icon/telegram.svg" /></a></li>
+                    <li><a href="#"><img src="/icon/whatsapp.svg" /></a></li>
+                    <li><a href="OlandriaApps@gmail.com"><img src="/icon/mail.svg"/></a></li>
+                </ul>
+            </div>
         </div>
     </section>
 </body>
