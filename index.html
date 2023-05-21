@@ -14,7 +14,7 @@
         <div class="container main-section__nav-container">
             <header>
                 <a href="#">
-                    <img class="header__logo" src="/icon/logo.svg" alt="olandia logo">
+                    <img class="main-section__logo" src="/icon/logo.svg" alt="olandia logo">
                 </a>
             </header>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -52,10 +52,10 @@
             </div>
         </div>        
     </section>
-    <section id = "about" class="second-section">
-        <div class="second-section__container container">
-            <h2 class="second-section__header">О нас</h2>
-            <p class="second-section__text">
+    <section id = "about" class="about-us">
+        <div class="about-us__container container">
+            <h2 class="about-us__header">О нас</h2>
+            <p class="about-us__text">
                 Мы Саша и Оля - основатели проекта Olandria Apps. Оля веб-дизайнер, Саша программист.
                 Совместными усилиями мы создаем классные продукты, которые <i>облегчают жизнь наших клиентов и делают ее
                 интереснее!</i> Наши проекты получаются красивыми и функциональными. Каждый клиент для нас особенный, и
@@ -63,14 +63,14 @@
             </p>
         </div>
     </section>
-    <section class="third-section">
+    <section class="cards-section">
         <div class="container">
-            <h2 class="third-section__header">Услуги</h2>
-            <div class="third-section__cards-container">
-                <div class="third-section__left-wrapper wrapper">
-                    <div class="third-section__left-top-card card dash">
-                        <p>Cайты под ключ</p>
-                        <div class="third-section__order-button">
+            <h2 class="cards-section__header">Услуги</h2>
+            <div class="cards-section__cards-container">
+                <div class="cards-section__left-wrapper wrapper">
+                    <div class="cards-section__left-top-card card dash">
+                        <h4 class="cards-section__card-header" >Cайты под ключ</h4>
+                        <div class="cards-section__card-button">
                             <button type="button" class="btn btn-outline-bright small-button pink-button" data-bs-toggle="modal" data-bs-target="#description-layout">Подробнее</button>
                         </div>
                         <!-- Модальное окно -->
@@ -81,7 +81,7 @@
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <h1 class="modal-title" id="description-layout__label">Что входит в разработку сайта<br>под ключ?</h1>
+                                    <h1 class="modal-title" id="description-layout__label">Что входит в разработку сайта под ключ?</h1>
                                     <ul>
                                         <li>анализ целевой аудитории и конкурентов Вашей ниши</li>
                                         <li>составление архитектуры будущего сайта</li>
@@ -94,7 +94,7 @@
                                         <li>вёрстка макета</li>
                                         <li>техническая помощь при покупке домена, подключении сервера и тд</li>
                                     </ul>
-                                  ...
+                                    
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
@@ -103,40 +103,38 @@
                               </div>
                             </div>
                         </div>
-                          
- 
                     </div>
-                    <div class="third-section__left-bottom-card card">
-                        <p class="white-text">Телеграм-боты</p>
-                        <div class="third-section__order-button">
+                    <div class="cards-section__left-bottom-card card">
+                        <h4 class="cards-section__card-header white-text">Телеграм-боты</h4>
+                        <div class="cards-section__card-button">
                             <button type="button"  class="btn btn-outline-dark small-button white-button">Подробнее</button>
                         </div>
                     </div>
                 </div>
-                <div class="third-section__center-wrapper wrapper">
-                    <div class="card s-card third-section__middle-top-card">
-                        <p class="white-text">CRM-системы</p>
-                        <div class="third-section__order-button">
+                <div class="cards-section__center-wrapper wrapper">
+                    <div class="card s-card cards-section__middle-top-card">
+                        <h4 class="cards-section__card-header white-text">CRM-системы</h4>
+                        <div class="cards-section__card-button">
                             <button type="button" class="btn btn-outline-dark small-button ">Подробнее</button>
                         </div>
                     </div>
                     <div class="card s-card">
-                        <p>Инфографика</p>
-                        <div class="third-section__order-button">
+                        <h4 class="cards-section__card-header">Инфографика</h4>
+                        <div class="cards-section__card-button">
                             <button type="button" class="btn btn-outline-bright small-button white-button">Подробнее</button>
                         </div>
                     </div>
                     <div class="card s-card">
-                        <p>Вёрстка макетов</p>
-                        <div class="third-section__order-button">
+                        <h4 class="cards-section__card-header">Вёрстка макетов</h4>
+                        <div class="cards-section__card-button">
                             <button type="button" class="btn btn-outline-bright small-button">Подробнее</button>
                         </div>
                     </div>
                 </div>
-                <div class="third-section__wrapper wrapper">
-                    <div class="third-section__big-card card">
-                        <p>CRM-системы</p>
-                        <div class="third-section__order-button">
+                <div class="cards-section__wrapper wrapper">
+                    <div class="cards-section__big-card card">
+                        <h4 class="cards-section__card-header">CRM-системы</h4>
+                        <div class="cards-section__card-button">
                             <button type="button" class="btn btn-outline-bright small-button pink-button">Подробнее</button>
                         </div>
                     </div>
@@ -233,7 +231,7 @@
                 <a href="#">Политика конфиденциальности</a>
             </div>
             <div class="footer__contacts">
-                <h3>Мы в социальных сетях:</h3>
+                <h4>Мы в социальных сетях:</h4>
                 <ul class="social-icons">
                     <li><a href="https://www.linkedin.com/company/olandria-apps/"><img src="/icon/linkedin.svg" /></a></li>
                     <li><a href="#"><img src="/icon/telegram.svg" /></a></li>

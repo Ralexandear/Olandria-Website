@@ -79,18 +79,21 @@ h3, h4 {
   font-weight: 400;
 }
 
-p, h3 {
-  font-size: 24px;
+h3 {
+  font-size: 48px;
 }
 
 h4 {
-  font-size: 48px;
+  font-size: 24px;
 }
 
 .bg-body-tertiary {
   background-color: transparent !important;
 }
 
+.main-section__logo {
+  height: 80px;
+}
 .main-section__nav-container {
   padding-top: 15px;
   display: flex;
@@ -125,21 +128,21 @@ h4 {
   background: #FDFBF7;
 }
 
-.first-section {
+.main-section__block {
   height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.first-section__order-button {
+.main-section__order-button {
   display: flex;
 }
-.first-section__text {
+.main-section__text {
   margin-bottom: 60px;
   font-size: 18px;
 }
 
-.second-section {
+.about-us {
   height: 600px;
   background: #F2F3ED;
   display: flex;
@@ -147,8 +150,11 @@ h4 {
   justify-content: center;
   margin-bottom: 140px;
 }
-.second-section__header {
+.about-us__header {
   margin-bottom: 40px;
+}
+.about-us__text {
+  font-size: 24px;
 }
 
 .card {
@@ -160,6 +166,7 @@ h4 {
   border: 1px solid;
   border-color: #8FA196;
   background: transparent;
+  margin-bottom: 50px;
 }
 .card p {
   margin-bottom: 40px;
@@ -168,32 +175,38 @@ h4 {
 .wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  margin-right: 50px;
+}
+.wrapper:last-child {
+  margin: 0;
 }
 
-.third-section__header {
+.cards-section__header {
   margin-bottom: 80px;
 }
-.third-section__cards-container {
+.cards-section__cards-container {
   margin-bottom: 140px;
   height: 790px;
+  max-width: 1100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
-.third-section__left-top-card {
+.cards-section__card-header {
+  margin-bottom: 40px;
+}
+.cards-section__left-top-card {
   width: 400px;
   height: 423px;
 }
-.third-section__left-bottom-card {
+.cards-section__left-bottom-card {
   width: 400px;
   height: 317px;
   background: #8799AA;
 }
-.third-section__middle-top-card {
+.cards-section__middle-top-card {
   background: #8FA196;
 }
-.third-section__big-card {
+.cards-section__big-card {
   height: 100%;
   width: 341px;
 }
@@ -328,9 +341,6 @@ h4 {
   font-size: 18px;
 }
 
-.modal {
-  --bs-modal-width: 80%;
-}
 .modal * {
   border: 0;
 }
