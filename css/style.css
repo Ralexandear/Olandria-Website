@@ -277,7 +277,6 @@ h4 {
   font-size: 14px;
 }
 .footer__contacts h3 {
-  font-size: 24px;
   font-weight: 500;
   margin-bottom: 40px;
 }
@@ -329,10 +328,18 @@ h4 {
   font-size: 18px;
 }
 
+.modal {
+  --bs-modal-width: 80%;
+}
 .modal * {
   border: 0;
 }
-.modal h1 {
+.modal-title {
   font-size: 30px;
   font-weight: 500;
+  margin-bottom: 40px;
+}
+.modal-body {
+  padding: 0 50px;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
