@@ -22,6 +22,13 @@ $secondary-bg: #F2F3ED
 $third-bg: #8799AA
 $natural-black: #232323
 
+:root
+    --fs-h1: 1.3rem
+    --bm: 30px
+
+
+.nav-link
+    color: $natural-black
 .btn
     border-radius: 80px
     &-outline-bright 
@@ -60,6 +67,8 @@ $natural-black: #232323
 
 .container
     position: relative
+    overflow: hidden
+
 
 
 body, h1,h2,h3,p
@@ -70,8 +79,13 @@ body
     background: $primary-bg  
     font-family: "Montserrat"
 
+
 a
     text-decoration: none
+
+h1
+    font-size: calc( var(--fs-h1) + 1.625vw )
+    font-weight: 400
 
 h2
     font-size: 60px
@@ -90,7 +104,7 @@ h4
 
 .bg-body-tertiary
     background-color: transparent!important
-.main-section
+.header
     &__logo
         height: 80px
     &__nav-container
@@ -99,6 +113,12 @@ h4
         flex-direction: row    
         justify-content: space-between
         align-items: center
+.nav-item
+    margin-right: 30px
+    &:last-child
+        margin: 0
+
+.main-section
     &__block
         height: 600px
         display: flex
@@ -107,13 +127,8 @@ h4
         justify-content: center
 
         h1
-            font-weight: 400
-            font-size: 72px
             margin-bottom: 30px
-    li
-        margin-right: 30px
-        &:last-child
-            margin: 0
+   
     &__text
         margin-bottom: 60px
   
@@ -127,7 +142,7 @@ h4
 
 .main-section
     &__block
-        height: 800px
+        height: 490px
         display: flex
         flex-direction: column
         justify-content: center
@@ -148,7 +163,7 @@ h4
     margin-bottom: 140px
 
     &__header
-        margin-bottom: 40px
+        margin-bottom: var(--bm)
     &__text
         font-size: 24px
 
@@ -165,7 +180,7 @@ h4
     background: transparent
     margin-bottom: 50px
     p
-        margin-bottom: 40px 
+        margin-bottom: var(--bm) 
 
 .wrapper
     display: flex
@@ -189,7 +204,7 @@ h4
  
     
     &__card-header
-        margin-bottom: 40px
+        margin-bottom: var(--bm)
         
     &__left-top-card
         width: 400px
@@ -279,7 +294,7 @@ h4
     &__contacts
         h3
             font-weight: 500
-            margin-bottom: 40px
+            margin-bottom: var(--bm)
         img
             height: 40px
         li
@@ -333,10 +348,16 @@ h4
     &-title
         font-size: 30px
         font-weight: 500
-        margin-bottom: 40px
+        margin-bottom: var(--bm)
 
     &-body
         padding: 0 50px
         text-align: left
         
-        
+@media  ( min-width: 576px  )
+    :root
+        --fs-h1: 3rem
+    
+@media  ( min-width: 1200px  )
+    :root
+        --bm: 40px       

@@ -16,6 +16,15 @@
   font-weight: 400;
   font-style: italic;
 }
+:root {
+  --fs-h1: 1.3rem;
+  --bm: 30px;
+}
+
+.nav-link {
+  color: #232323;
+}
+
 .btn {
   border-radius: 80px;
 }
@@ -54,6 +63,7 @@
 
 .container {
   position: relative;
+  overflow: hidden;
 }
 
 body, h1, h2, h3, p {
@@ -68,6 +78,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-size: calc(var(--fs-h1) + 1.625vw);
+  font-weight: 400;
 }
 
 h2 {
@@ -91,16 +106,24 @@ h4 {
   background-color: transparent !important;
 }
 
-.main-section__logo {
+.header__logo {
   height: 80px;
 }
-.main-section__nav-container {
+.header__nav-container {
   padding-top: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+
+.nav-item {
+  margin-right: 30px;
+}
+.nav-item:last-child {
+  margin: 0;
+}
+
 .main-section__block {
   height: 600px;
   display: flex;
@@ -109,15 +132,7 @@ h4 {
   justify-content: center;
 }
 .main-section__block h1 {
-  font-weight: 400;
-  font-size: 72px;
   margin-bottom: 30px;
-}
-.main-section li {
-  margin-right: 30px;
-}
-.main-section li:last-child {
-  margin: 0;
 }
 .main-section__text {
   margin-bottom: 60px;
@@ -129,7 +144,7 @@ h4 {
 }
 
 .main-section__block {
-  height: 800px;
+  height: 490px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,7 +166,7 @@ h4 {
   margin-bottom: 140px;
 }
 .about-us__header {
-  margin-bottom: 40px;
+  margin-bottom: var(--bm);
 }
 .about-us__text {
   font-size: 24px;
@@ -169,7 +184,7 @@ h4 {
   margin-bottom: 50px;
 }
 .card p {
-  margin-bottom: 40px;
+  margin-bottom: var(--bm);
 }
 
 .wrapper {
@@ -192,7 +207,7 @@ h4 {
   flex-direction: row;
 }
 .cards-section__card-header {
-  margin-bottom: 40px;
+  margin-bottom: var(--bm);
 }
 .cards-section__left-top-card {
   width: 400px;
@@ -291,7 +306,7 @@ h4 {
 }
 .footer__contacts h3 {
   font-weight: 500;
-  margin-bottom: 40px;
+  margin-bottom: var(--bm);
 }
 .footer__contacts img {
   height: 40px;
@@ -347,9 +362,20 @@ h4 {
 .modal-title {
   font-size: 30px;
   font-weight: 500;
-  margin-bottom: 40px;
+  margin-bottom: var(--bm);
 }
 .modal-body {
   padding: 0 50px;
   text-align: left;
+}
+
+@media (min-width: 576px) {
+  :root {
+    --fs-h1: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --bm: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
