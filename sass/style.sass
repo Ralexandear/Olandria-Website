@@ -31,7 +31,7 @@ $natural-black: #232323
     color: $natural-black
 .btn
     border-radius: 80px
-    &-outline-bright 
+    &-outline-bright   
         --bs-btn-color: #232323
         --bs-btn-border-color: #8FA196
         --bs-btn-hover-color: #FDFBF7
@@ -88,7 +88,7 @@ h1
     font-weight: 400
 
 h2
-    font-size: 60px
+    font-size: 22px
     font-weight: 400
 
 h3, h4
@@ -99,14 +99,15 @@ h3
     
 
 h4
-    font-size: 24px
+    font-size: 18px
+    margin-bottom: 20px
     
 
 .bg-body-tertiary
     background-color: transparent!important
 .header
     &__logo
-        height: 80px
+        height: 50px
     &__nav-container
         padding-top: 15px
         display: flex
@@ -127,17 +128,13 @@ h4
         justify-content: center
 
         h1
-            margin-bottom: 30px
+            margin-bottom: 20px
    
     &__text
-        margin-bottom: 60px
-  
-
-    
-
+        margin-bottom: 40px
 
 .quiz
-    font-size: 24px
+    font-size: 14px
     background: $primary-bg
 
 .main-section
@@ -150,22 +147,22 @@ h4
     &__order-button
         display: flex
     &__text
-        margin-bottom: 60px
-        font-size: 18px
+        margin-bottom: 40px
+        font-size: 14px
         
 
 .about-us
-    height: 600px
+    height: 370px
     background: $secondary-bg
     display: flex
     flex-direction: column
     justify-content: center
-    margin-bottom: 140px
+    margin-bottom: 60px
 
     &__header
         margin-bottom: var(--bm)
     &__text
-        font-size: 24px
+        font-size: 14px
 
 // .card
 
@@ -192,51 +189,44 @@ h4
 
 .cards-section
     &__header
-        margin-bottom: 80px
+        margin-bottom: 50px
     
     &__cards-container
-        margin-bottom: 140px
-        height: 790px
-        max-width: 1100px
-        display: flex
-        flex-direction: row
+        margin-bottom: 60px
+        height: 1200px
+        max-width: 320px
+
   
- 
-    
     &__card-header
-        margin-bottom: var(--bm)
+        margin-bottom: 30px
         
     &__left-top-card
-        width: 400px
-        height: 423px
+        width: 300px
+        height: 160px
  
     &__left-bottom-card
-        width: 400px
-        height: 317px
+        width: 300px
+        height: 160px
         background: $third-bg
     &__middle-top-card
         background: $olvishi-red
 
-    
     &__big-card
-        height: 100%
-        width: 341px
- 
-        
+        height: 160px
+        width: 300px
+   
 .s-card
-    width: 348px
-    height: 233px
-
+    width: 300px
+    height: 160px
 
 .white-text
     color: $primary-bg  
 
-
 .order-button
     background: $olvishi-red
-    width: 308px
-    height: 70px
-    font-size: 18px
+    width: 180px
+    height: 45px
+    font-size: 14px
     &:hover
         border-color: $olvishi-red
     &:active
@@ -245,31 +235,29 @@ h4
  
     
 .small-button
-    width: 185px
-    height: 46px
-    font-size: 18px
-
-
+    width: 120px
+    height: 30px
+    font-size: 12px
     
 .fifth-section
     &__header
-        margin-bottom: 74px
+        margin-bottom: 24px
     &__container
-        margin-bottom: 200px
+        margin-bottom: 60px
 
 .contact-us
     background: $secondary-bg
     &__container
-        height: 700px
+        height: 300px
         display: flex
         align-items: flex-start
         flex-direction: column
         justify-content: center
         p
-            margin-bottom: 60px
+            margin-bottom: 30px
 
     &__header
-        margin-bottom: 20px
+        margin-bottom: 10px
         
 .footer
     &__license
@@ -284,19 +272,20 @@ h4
     &__container
         height: 300px
         display: flex
-        flex-direction: row
-        align-items: center
+        flex-direction: column-reverse
+        justify-content: space-evenly
+        align-items: flex-start
 
     h6
-        font-size: 18px
-    p,a
         font-size: 14px
+    p,a
+        font-size: 12px
     &__contacts
         h3
             font-weight: 500
             margin-bottom: var(--bm)
         img
-            height: 40px
+            height: 34px
         li
             margin-right: 15px!important
             &:last-child
@@ -312,7 +301,10 @@ h4
     padding: 0
     
     li
-        margin-right: 30px
+        margin-right: 10px
+    img
+        height: 35px
+
         &:last-child
             margin: 0
 
@@ -335,15 +327,17 @@ h4
 
     &:not(.collapsed)
         background-color: $primary-bg
+        color: $natural-black
 
 .accordionText
-    font-size: 18px
+    font-size: 12px
 
 .modal
     // --bs-modal-width: 80%
     // max-width: 700px
     & *
         border: 0
+
     
     &-title
         font-size: 30px
